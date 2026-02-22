@@ -1,0 +1,121 @@
+.block-31 {
+	.owl-nav {
+		position: absolute;
+		right: 50px;
+		bottom: 130px;
+		.owl-prev, .owl-next {
+			color: $white;
+			font-size: 20px;
+			opacity: 1;
+			transition: .3s all ease;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.owl-dots {
+		position: absolute;
+		bottom: 100px;
+		// left: 50%;
+		right: 50px;
+		// transform: translateX(-50%);
+		.owl-dot {
+			float: left;
+			width: 40px;
+			height: 2px;
+			background: $white;
+			opacity: .3;
+			&.active {
+				opacity: 1;
+				background: $white;
+			}
+		}
+	}
+}
+.block-30 {
+	background-size: cover;
+	background-color: #ccc;
+	// background-position: center center;
+	// background-repeat: no-repeat;
+	padding: 0;
+	position: relative;
+	&:before {
+		background: $black;
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		opacity: .4;
+		z-index: 0;
+	}
+	&.no-overlay {
+		&:before {
+			display: none;
+		}
+	}
+	&, .row {
+		min-height: 700px;
+		height: 100vh;
+	}
+	.subheading-sm {
+		margin-bottom: 30px;
+		color: $white;
+		font-size: 18px;
+		text-transform: uppercase;
+		letter-spacing: .1em;
+		position: relative;
+		display: inline-block;
+		font-weight: 300;
+		&:after {
+			width: 80px;
+			height: 2px;
+			background: $white;
+			position: absolute;
+			left: 120%;
+			top: 50%;
+			transform: translateY(-50%);
+			content: "";
+		}
+	}
+	.heading {
+		color: $white;
+		font-size: 30px;
+		line-height: 1.1;
+		margin-bottom: 50px;
+		@include media-breakpoint-up(md) {
+			font-size: 50px;	
+		}
+		@include media-breakpoint-up(lg) {
+			font-size: 100px;	
+		}
+	}
+	.btn {
+		background: $white;
+		border-radius: 0;
+		border: 2px solid transparent;
+		font-size: 14px;
+		letter-spacing: .2em;
+		text-transform: uppercase;
+		color: darken(#ccc, 20%);
+		box-shadow: 0 20px 40px -15px rgba(0,0,0,.2);
+		&:hover {
+			border-color: $white;
+			color: $white;
+		}
+	}
+	&.block-30-sm {
+		&, .row {
+			min-height: 700px;
+			height: 70vh;
+		}
+		.heading {
+			font-size: 70px;
+			margin-bottom: 20px;
+		}
+	}
+	.lead {
+		color: $white;
+	}
+}

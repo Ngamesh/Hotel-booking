@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hotel</title>
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+  <link rel="shortcut icon" href="images/image.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/roomstyle.css">
+
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="font/flaticon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--new offer css-->
+  <link href="css/offer.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/offerowl.carousel.min.css">
+
+
+
+
+
+</head>
+      <!-- nav bar -->
+<body id="page-top">
+  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top justify-content-end" id="mainNav" style=" opacity:95%;">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/image.png"></a>
+      <button class="btn btn-primary py-1 px-5" data-toggle="modal" data-target="#exampleModal">Book Now</button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" 
+      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-0" id="navbarResponsive">
+        <ul class="navbar-nav text-right">
+          <li class="nav-item" >
+            <a class="nav-link js-scroll-trigger" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="room.html">Rooms</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="restaurant.html">Restaurant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="faq.html">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- sliding images -->
+  <header>
+    <div class="block-31" style="position: relative;">
+    <div class="owl-carousel loop-block-31 ">
+      <div class="block-30 item" style="background-image: url('images/image1.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Welcome</span>
+              <h2 class="heading">A Luxury Experience</h2>
+              <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Book Now
+              </button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-30 item" style="background-image: url('images/spa.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Welcome</span>
+              <h2 class="heading">Simple <br>&amp; Elegant</h2>
+              <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Book Now
+              </button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block-30 item" style="background-image: url('images/coffee.jpg');" data-stellar-background-ratio="0.5">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-10">
+              <span class="subheading-sm">Welcome</span>
+              <h2 class="heading">Food <br> &amp; Drinks</h2>
+              <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Book Now
+              </button></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+  
+            <div class="block-32">
+              <form action="#">
+                <div class="row">
+                  <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                    <label for="checkin_date">Check In<span class="required">*</span></label>
+                    <div class="field-icon-wrap">
+                      <div class="icon"><span class="icon-calendar"></span></div>
+                      <input type="date" id="checkin_date" class="form-control" placeholder="month/day/year">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                    <label for="checkout_date">Check Out</label>
+                    <div class="field-icon-wrap">
+                      <div class="icon"><span class="icon-calendar"></span></div>
+                      <input type="date" id="checkout_date" class="form-control" placeholder="month/day/year">
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+                    <div class="row">
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="roomcount">Rooms<span class="required">*</span></label>
+                        <div class="field-icon-wrap">
+                          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                          <select name="roomcount" id="roomcount" class="form-control">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4+</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3 mb-md-0">
+                        <label for="personcount">Person</label>
+                        <div class="field-icon-wrap">
+                          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                          <select name="person count" id="personcount" class="form-control">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4+</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-3 align-self-end">
+                    <button class="btn btn-primary btn-block">Check Availabilty</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </header>
+
+
+<!--special offer-->
+
+<!--new offer-->
+<section class="site-section py-3">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+            <div class="single-slider slider">
+              <div class="item">
+                <div class="room-img" style="background-image: url(images/image4.jpg); alt: image placeholder;">
+                  <div class="container py-5" style=" text-align: center; color: azure;">
+                    <div class="row align-items-center">
+                      <div class="col-md-8 mx-auto">
+                        <h1> dashain offer</h1>
+                        <h2>20% off in every booking during <br> Dashain festive month. </h2>
+            <p><a class="btn py-4 px-5 btn-primary  " href="offer.html" >
+                View Offers
+              </a></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="room-img" style="background-image: url(images/image4.jpg);">
+                  <div class="container py-5" style=" text-align: center; color: azure;">
+                    <div class="row align-items-center">
+                      <div class="col-md-8 mx-auto">
+                        <h1> dashain thorei offer</h1>
+                        <h2>10% off in every booking during <br> Dashain festive month. </h2>
+                        <p><a class="btn py-4 px-5 btn-primary  " href="offer.html">
+                            View Offers
+                          </a></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="item">
+                <div class="room-img" style="background-image: url(images/image4.jpg);">
+                  <div class="container py-5" style=" text-align: center; color: azure;">
+                    <div class="row align-items-center">
+                      <div class="col-md-8 mx-auto">
+                        <h1> dashain dherei offer</h1>
+                        <h2>30% off in every booking during <br> Dashain festive month. </h2>
+                        <p><a class="btn py-4 px-5 btn-primary  " href="offer.html">
+                            View Offers
+                          </a></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+      </div> <!-- .col-md-8 -->
+    </div>
+  </div>
+</section> <!-- .section -->
+
+ 
+<!--services-->
+<div class="container" id="services">
+<div class="row site-section">
+  <div class="col-md-12">
+    <div class="row mb-5">
+      <div class="col-md-7 section-heading">
+        <h2 class="heading">Facilities &amp; Services</h2>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="media block-6">
+      <div class="icon"><span class="flaticon-bed"></span></div>
+      <div class="media-body">
+        <h3 class="heading">Luxury Rooms</h3>
+        <p>If you like to treat yourself to a touch of luxury once in a while, our hotel offers stunning open plan luxury rooms with our VIP Luxury Room</p>
+      </div>
+    </div>      
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="media block-6">
+      <div class="icon"><span class="flaticon-laptop"></span></div>
+      <div class="media-body">
+        <h3 class="heading">Fast &amp; Free Wifi</h3>
+        <p>Fast WiFi is accessible throughout the hotel, with plenty of open areas throughout our hotel you're able to work wherever the mood takes you</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4">
+    <div class="media block-6">
+      <div class="icon"><span class="flaticon-customer-service"></span></div>
+      <div class="media-body">
+        <h3 class="heading">Call Us 24/7</h3>
+        <p>We provide our guests with day and night reception, a wake-up call service and also with 24/7 call service</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4">
+    <div class="media block-6">
+      <div class="icon"><span class="flaticon-jeep"></span></div>
+      <div class="media-body">
+        <h3 class="heading">Travel Accomodation</h3>
+        <p>We're more than just hotel; discover a lot of accommodation options, our hotel offers a tourist friendly accommodation throughout the country</p>
+      </div>
+    </div>      
+  </div>
+
+  <div class="col-md-6 col-lg-4">
+    <div class="media block-6">
+      <div class="icon"><span class="flaticon-credit-card"></span></div>
+      <div class="media-body">
+        <h3 class="heading">Accepts Credit Card</h3>
+        <p>You can book a hotel room with either a credit or a debit card, we give 4% discount with each payment with credit or debit card</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 col-lg-4">
+    <div class="media block-6">
+      <div class="icon"><span class="flaticon-beauty-treatment"></span></div>
+      <div class="media-body">
+        <h3 class="heading">Spa</h3>
+        <p>We do our best in service, You have your best in pleasure, find out about our antique Nepelese traditional spa</p>
+      </div>
+    </div>
+    
+  </div>
+  <a href="services.html" style="color: #fc3c3c"> See More...</a>
+</div>
+</div>
+
+  <!-- featured rooms -->
+
+ 
+     
+
+    <div class="site-section block-13 bg-light" id="rooms">
+      <div class="container">
+         <div class="row mb-5">
+            <div class="col-md-7 section-heading">
+              <h2 class="heading">Rooms &amp; Suites</h2>
+              
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="nonloop-block-13 owl-carousel">
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Single Room</h2>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img_2.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Family Room</h2>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img_3.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">VIP Room</h2>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img_4.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Single Room</h2>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img_5.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Family Room</h2>
+                        
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img_6.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">VIP Room</h2>
+                      
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+              <a href="Room.html" style="color:#fc3c3c;">See More...</a>
+    
+            </div> <!-- .col-md-12 -->
+          </div>
+      </div>
+    </div>
+
+
+
+	
+	
+<!---Foods------------------------------------------------------>
+	<div class="site-section block-13 bg-light py-1" id="food">
+      <div class="container">
+         <div class="row mb-5">
+            <div class="col-md-7 section-heading">
+              <h2 class="heading">Foods &amp; Drinks</h2>
+              
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="nonloop-block-13 owl-carousel">
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img-02.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Drink</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img-08.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Breakfast</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img-04.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Burger</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/heavy.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Lunch</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/coffee.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Coffee</h2>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="item">
+                    <div class="block-34">
+                      <div class="image">
+                        <a href="#"><img src="images/img-05.jpg" alt="Image placeholder"></a>
+                      </div>
+                      <div class="text">
+                        <h2 class="heading">Salad</h2>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+              </div>
+              <a href="restaurant.html" style="color:#fc3c3c;">See More...</a>
+            </div> <!-- .col-md-12 -->
+          </div>
+      </div>
+    </div>
+
+
+    <!-- review section -->
+<div class="site-section bg-lightt">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-7 section-heading">
+            <span class="subheading-sm">Reviews</span>
+            <h2 class="heading">Guest Reviews</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-lg-4">
+
+            <div class="block-33">
+              <div class="vcard d-flex mb-3">
+                <div class="image align-self-center"><img src="images/person.jpeg" alt="Person here"></div>
+                <div class="name-text align-self-center">
+                  <h2 class="heading">Ngamesh Raj Bhandari</h2>
+                  <span class="meta">Satisfied Customer</span>
+                </div>
+              </div>
+              <div class="text">
+                <blockquote>
+                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <div class="block-33">
+              <div class="vcard d-flex mb-3">
+                <div class="image align-self-center"><img src="images/person2.jpg" alt="Person here"></div>
+                <div class="name-text align-self-center">
+                  <h2 class="heading">Nancy Green</h2>
+                  <span class="meta">Satisfied Customer</span>
+                </div>
+              </div>
+              <div class="text">
+                <blockquote>
+                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4">
+
+            <div class="block-33">
+              <div class="vcard d-flex mb-3">
+                <div class="image align-self-center"><img src="images/person1.jpeg" alt="Person here"></div>
+                <div class="name-text align-self-center">
+                  <h2 class="heading">Elizabeth Charles</h2>
+                  <span class="meta">Satisfied Customer</span>
+                </div>
+              </div>
+              <div class="text">
+                <blockquote>
+                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
+                </blockquote>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+<!--end of reviews-->
+	
+	
+<!--booking
+<section id="booking" class="bg-light py-1" style="opacity: 95%;">
+  <div class="contain">
+    <div class="py-0" style="opacity: 100%;">
+      <div class="row">
+        <div class="col-lg-6 mb-3 mb-lg-0">
+                <div class="container-time">
+                  <h2 class="heading">Time Open</h2>
+                  <h3 class="heading-days">Sunday - Friday</h3>
+                  <p>7am-11am (breakfast)</p>
+                  <p>11am-10pm (lunch/dinner)</p>
+                  <h3 class="heading-days">Saturday</h3>
+                  <p>9am-pm (breakfast)</p>
+                  <p>1mm-10pm (lunch/dinner)</p>
+                  <hr color="white">
+                  <h4 class="heading-phone">Call Us:023-582870</h4>
+                </div>
+            </div>
+            -->
+          
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title" id="exampleModalLabel">Reservation Form</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+  <div class="container col-lg-6 ">
+  <form action="/action_page.php">
+    <div class="form-group">
+      <label for="name">Name<span class="required">*</span></label>
+      <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="email">Phone<span class="required">*</span></label>
+      <input type="number" class="form-control" id="phone" placeholder="Enter Your Phone Number" name="phone">
+    </div>
+    <div class="form-group">
+      <label for="email">Check In<span class="required">*</span></label>
+      <input type="date" class="form-control" id="checkin" placeholder="Enter Check In Date" name="checkin">
+    </div>
+    <div class="form-group">
+      <label for="email">Check Out</label>
+      <input type="date" class="form-control" id="checkout" placeholder="Enter Check Out Date" name="checkout">
+    </div>
+    <div class="form-group">
+      <label for="time">Time</label>
+      <input type="time" class="form-control" id="time" placeholder="time" name="time">
+    </div>
+    <div class="form-group">
+      <label for="adultcount">Adult</label>
+      <div class="field-icon-wrap">
+        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+        <select name="adultcount" id="adult" class="form-control" placeholder="2">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4+</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="childrencount">Children</label>
+      <div class="field-icon-wrap">
+        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+        <select name="childrencount" id="childern" class="form-control" placeholder="2">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4+</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="roomcount">Rooms<span class="required">*</span></label>
+      <div class="field-icon-wrap">
+        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+        <select name="roomcount" id="roomcount" class="form-control" placeholder="2">
+          <option value="">1</option>
+          <option value="">2</option>
+          <option value="">3</option>
+          <option value="">4+</option>
+        </select>
+      </div>
+    </div>
+
+  </form>
+</div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        <button type="submit" class="btn btn-primary">Book</button>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+
+
+<!-- checkin and out book second
+    <div class="col-lg-6 mb-3 mb-lg-0 bg-secondary">
+            <div class="container-form">
+                <form action="#">
+                  <h2 class="heading heading-yellow">Reservation Online</h2>
+                  <div class="form-field">
+                    <p>Your Name</p>
+                    <input type="text" placeholder="Your Name">
+                  </div>
+          
+                  <div class="form-field">
+                    <p>Your Email</p>
+                    <input type="text" placeholder="Your Email">
+                  </div>
+
+                  <div class="form-field">
+                    <p>Your Contact</p>
+                    <input type="text" placeholder="Your Phone No.">
+                  </div>
+          
+                  <div class="form-field">
+                    <p>Date</p>
+                    <input type="Date">
+                  </div>
+          
+                  <div class="form-field">
+                    <p>Time</p>
+                    <input type="Time">
+                  </div>
+          
+                  <div class="form-field">
+                    <p>How many people</p>
+                    <select name="select" id="#">
+                      <option value="1">1 person</option>
+                      <option value="2">2 persons</option>
+                      <option value="3">3 persons</option>
+                      <option value="4">4 persons</option>
+                    </select>
+                  </div>
+          
+                  <button class="btn">Book</button>
+                </form>
+              </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section> -->
+
+
+  <!-- rooms
+<section>
+  <div class="container">
+
+    <div class="py-1" style="opacity: 90%;">
+      <h3 class="font-weight-bold mb-0"> Rooms</h3>
+      <p class="font-italic text-muted mb-4"></p>
+      <div class="row">
+
+        <div class="col-lg-6 mb-3 mb-lg-0">
+          <div class="hover hover-2 text-white rounded"><img src="images/image3.jpg" alt="2">
+            <div class="hover-overlay"></div>
+            <div class="hover-2-content px-5 py-4">
+              <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">One Bed </span>Room</h3>
+              <p class="hover-2-description text-uppercase mb-0">Select the Room</p>
+            </div>
+          </div>
+        </div>
+  
+
+        <div class="col-lg-6">
+          <div class="hover hover-2 text-white rounded"><img src="images/image2.jpg" alt="">
+            <div class="hover-overlay"></div>
+            <div class="hover-2-content px-5 py-4">
+              <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Two Bed </span>Room</h3>
+              <p class="hover-2-description text-uppercase mb-0">Select the Room</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+
+<!-- Start Footer -->
+<footer class="footer-area bg-f">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6">
+        <h3>review our hotel</h3>
+        <div class="review_form">
+          <form class="review_form">
+            <input name="name" id="name" class="form_input" placeholder="Enter Name" type="text">
+            <textarea name="review" id="review" rows="2" class="form_input" placeholder="Give Review" type="text"></textarea>
+            <button type="submit" class="submit">SUBMIT</button>
+            <div class="clearfix"></div>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <h3>Contact information</h3>
+        <p class="lead">Lakside, Pokhara <br> Street-19</p>
+        <p class="lead"><a href="#">+977 9876543210</a> <br> <a href="#"> +977 9811111111</a></p>
+        <p><a href="#"> lakeside@hotel.book.com</a> <br>
+          <a href="#"> lakeside@hotel.inquiry.com</a></p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <h3>Subscribe</h3>
+        <div class="subscribe_form">
+          <form class="subscribe_form">
+            <input name="email" id="subs-email" class="form_input" placeholder="Enter Email" type="email">
+            <button type="submit" class="submit">SUBSCRIBE</button>
+            <div class="clearfix"></div>
+          </form>
+        </div>
+        <ul class="list-inline f-social">
+          <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <div class="copyright">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="company-name">All Rights Reserved.<br> <a href="#">The Hotel</a> &copy; 2020  Design By  
+        <a href="#">DigiHawk</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</footer>
+<!-- End Footer -->
+
+  <!-- Bootstrap  JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!--  JavaScript for the theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  <!-- photo slide JavaScript-->
+  <script src="js/bootstrap.min.js"></script>
+
+  <!-- popup messenger-->
+  <div class="fb-customerchat"
+ page_id="110876764070001"
+ minimized="true">
+</div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '912333495590130',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v2.12'
+    });
+  };
+(function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); 
+     js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+	
+	
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+
+  <!--new offer js-->
+  <script src="js/room/jquery.min.js"></script>
+  <script src="js/room/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/room/jquery.stellar.min.js"></script>
+  <script src="js/room/owl.carousel.min.js"></script>
+  <script src="js/room/aos.js"></script>
+  <script src="js/room/scrollax.min.js"></script>
+  <script src="js/room/main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Hotel</title>
+	 <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+  <link rel="shortcut icon" href="images/image.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/roomstyle.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="font/flaticon.css" rel="stylesheet">
+ 
+
+
+
+
+</head>
+<body>
+<div class="form-popup" id="myForm">
+  <h1>Login</h1>
+  <div class="container col-lg-6 mb-3 mb-lg-0 bg-light">
+    <h2>Reservation Online</h2>
+    <form action="/action_page.php">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="pwd">Email:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="email">Phone:</label>
+        <input type="number" class="form-control" id="phone" placeholder="Enter Your Phone Number" name="phone">
+      </div>
+      <div class="form-group">
+        <label for="email">Check In:</label>
+        <input type="date" class="form-control" id="checkin" placeholder="Enter Check In Date" name="checkin">
+      </div>
+      <div class="form-group">
+        <label for="email">Check Out:</label>
+        <input type="date" class="form-control" id="checkout" placeholder="Enter Check Out Date" name="checkout">
+      </div>
+      <div class="form-group">
+        <label for="adultcount">Adults</label>
+        <div class="field-icon-wrap">
+          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+          <select name="adultcount" id="adult" class="form-control" placeholder="2">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4+</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="childrencount">Children</label>
+        <div class="field-icon-wrap">
+          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+          <select name="childrencount" id="childern" class="form-control" placeholder="2">
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4+</option>
+          </select>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Book</button>
+      <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+  </div>
+</div>
+</body>
+</html>
