@@ -1,8 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const stayRadio = document.getElementById('booking_type_stay');
-    const tourRadio = document.getElementById('booking_type_tour');
-    const eventsRadio = document.getElementById('booking_type_events');
-
+    const reservationForm = document.getElementById('reservation-form');
     const stayOptions = document.getElementById('stay_options');
     const tourOptions = document.getElementById('tour_options');
     const eventsOptions = document.getElementById('events_options');
@@ -20,24 +17,50 @@ document.addEventListener('DOMContentLoaded', function () {
         window.scrollTo(0, reservationScrollPosition);
     }
 
+    function getSelectedBookingType() {
+        const selectedBookingType = document.querySelector('input[name="booking_type"]:checked');
+        return selectedBookingType ? selectedBookingType.value : 'stay';
+    }
+
     function updateFormFields() {
+        const selectedBookingType = getSelectedBookingType();
+
         if (stayOptions) stayOptions.style.display = 'none';
         if (tourOptions) tourOptions.style.display = 'none';
         if (eventsOptions) eventsOptions.style.display = 'none';
 
-        if (stayRadio && stayRadio.checked) {
+        if (selectedBookingType === 'stay') {
             if (stayOptions) stayOptions.style.display = 'block';
-        } else if (tourRadio && tourRadio.checked) {
+        } else if (selectedBookingType === 'tour') {
             if (tourOptions) tourOptions.style.display = 'block';
-        } else if (eventsRadio && eventsRadio.checked) {
+        } else if (selectedBookingType === 'events') {
             if (eventsOptions) eventsOptions.style.display = 'block';
         }
     }
 
-    if (stayRadio && tourRadio && eventsRadio) {
-        stayRadio.addEventListener('change', updateFormFields);
-        tourRadio.addEventListener('change', updateFormFields);
-        eventsRadio.addEventListener('change', updateFormFields);
+    if (reservationForm) {
+        reservationForm.addEventListener('change', function (event) {
+            if (event.target && event.target.name === 'booking_type') {
+                updateFormFields();
+            }
+        });
+
+        reservationForm.addEventListener('click', function (event) {
+            const bookingTypeControl = event.target.closest('.custom-control');
+
+            if (!bookingTypeControl) {
+                return;
+            }
+
+            const bookingTypeInput = bookingTypeControl.querySelector('input[name="booking_type"]');
+
+            if (!bookingTypeInput || bookingTypeInput.checked) {
+                return;
+            }
+
+            bookingTypeInput.checked = true;
+            bookingTypeInput.dispatchEvent(new Event('change', { bubbles: true }));
+        });
 
         // Initial call to set correct state
         updateFormFields();

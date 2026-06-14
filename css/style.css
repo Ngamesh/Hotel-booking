@@ -537,8 +537,9 @@ select {
 #reservation-form .custom-control {
   display: inline-flex;
   align-items: center;
-  min-height: 20px;
-  padding-left: 22px;
+  min-height: 22px;
+  padding-left: 24px;
+  line-height: 1;
   cursor: pointer;
 }
 
@@ -555,16 +556,19 @@ select {
 #reservation-form .custom-control-label {
   display: inline-flex;
   align-items: center;
-  min-height: 20px;
+  min-height: 22px;
   margin-bottom: 0;
   padding-top: 0;
-  line-height: 1.25;
+  line-height: 1;
   cursor: pointer;
 }
 
 #reservation-form .custom-control-label::before,
 #reservation-form .custom-control-label::after {
+  left: -24px;
   top: 50%;
+  width: 16px;
+  height: 16px;
   transform: translateY(-50%);
 }
 
@@ -851,9 +855,24 @@ body.reservation-scroll-locked {
 
 .block-30 {
   background-size: cover;
-  background-color: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #111;
   padding: 0;
   position: relative;
+}
+
+.loop-block-31.owl-carousel:not(.owl-loaded) {
+  display: block;
+  overflow: hidden;
+}
+
+.loop-block-31.owl-carousel:not(.owl-loaded) > .block-30 {
+  display: none;
+}
+
+.loop-block-31.owl-carousel:not(.owl-loaded) > .block-30:first-child {
+  display: block;
 }
 
 .block-30:before {
@@ -1748,44 +1767,33 @@ div {
 }
 
 
-/**/
-/*
-*
-* ==========================================
-* comment section
-* ==========================================
-*
-*/
-
-
-.comment-wrapper .panel-body {
-  max-height: 650px;
-  overflow: auto;
-}
-
-.media img {}
-
-.comment-wrapper .media-list .media img {
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  box-shadow: 0px 0px 20px rgb(167, 167, 167);
-}
-
-.media-body {
-  padding-left: 15px;
-}
-
-.comment-wrapper .media-list .media {
-  border-bottom: 1px solid #efefef;
-  margin-bottom: 25px;
-}
-
-
-
-
 .Blogtext {
   padding: 0% 9% 0% 9%;
+}
+
+.recent-blog-section {
+  margin-top: 20px;
+  margin-bottom: 70px;
+}
+
+.recent-blog-section .sidebar-box {
+  padding-top: 10px;
+}
+
+.recent-blog-section .block-21 .heading a {
+  color: #000;
+  text-decoration: none;
+}
+
+.recent-blog-section .block-21 .heading a:hover,
+.recent-blog-section .block-21 .heading a:focus {
+  color: #fc3c3c;
+  text-decoration: none;
+}
+
+.recent-blog-section .block-21 .meta a {
+  color: gray;
+  text-decoration: none;
 }
 
 /* Custom Flatpickr Scroll Styles for Performance and UI */

@@ -160,6 +160,20 @@
         padding: 20px;
         margin-top: 10px;
         border-radius: 8px;
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transform-origin: top center;
+        will-change: height, opacity, transform;
+        backface-visibility: hidden;
+    }
+
+    #mainNav .navbar-collapse.collapsing {
+        transition: height 180ms ease !important;
+    }
+
+    #mainNav .navbar-collapse.collapse.show {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
     }
 }
 
