@@ -11,9 +11,10 @@
   <title>About the Hotel</title>
 
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/roomdecstyle.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+    <link href="css/roomdecstyle.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="font/flaticon.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -21,211 +22,178 @@
 
 
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark  fixed-top" id="mainNav" style="opacity:95%; ">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="images/image.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" 
-        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item" >
-              <a class="nav-link js-scroll-trigger" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="room.html">Rooms</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="restaurant.html">Restaurant</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a type="button" class="btn btn-primary py-1 px-5" data-toggle="modal" data-target="#exampleModal">
-                Book Now
-              </a>             
-            </li>
-          </ul>
+  <!-- nav bar - loaded from js/navbar-loader.js -->
+  <script src="js/navbar-loader.js"></script>
+
+
+
+
+  <!-- about section and team section-->
+  <div class="site-section" style="margin-top: 80px;">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-8">
+          <img src="images/footer.avif" alt="Image placeholder" class="img-fluid">
         </div>
-      </div>
-    </nav>
 
-  
-
-	<!-- about section and team section-->
-    <div class="site-section">
-        <div class="container">
-          <div class="row mb-5">
-            <div class="col-md-8" >
-              <img src="images/footer.jpg" alt="Image placeholder" class="img-fluid">
-            </div>
-
-              <div class="col-lg-4 sidebar ftco-animate pl-md-5">
-                  <div class="sidebar-box ftco-animate">
-                      <h3>Recent Blog</h3>
-                      <div class="block-21 mb-4 d-flex">
-                          <a class="blog-img mr-4" style="background-image: url(images/footer.jpg);"></a>
-                          <div class="text">
-                              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                              <div class="meta">
-                                  <div><a href="#"><span class="flaticon-calendar"></span> Nov 4, 2019</a></div>
-                                  <div><a href="#"><span class="flaticon-user"></span> Admin</a></div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="block-21 mb-4 d-flex">
-                          <a class="blog-img mr-4" style="background-image: url(images/footer.jpg);"></a>
-                          <div class="text">
-                              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                              <div class="meta">
-                                  <div><a href="#"><span class="flaticon-calendar"></span> Nov 4, 2020</a></div>
-                                  <div><a href="#"><span class="flaticon-user"></span> Admin</a></div>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="block-21 mb-4 d-flex">
-                          <a class="blog-img mr-4" style="background-image: url(images/footer.jpg);"></a>
-                          <div class="text">
-                              <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
-                              <div class="meta">
-                                  <div><a href="#"><span class="flaticon-calendar"></span> Nov 4, 2020</a></div>
-                                  <div><a href="#"><span class="flaticon-user"></span> Admin</a></div>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          </div>
-
-        <div class="Blogtext">
-          <div class="row">
-            <div class="col-md-8 mb-4" style="text-align:center;">
-              <h2>The Hotel, Travel live brilliantly</h2>
-            </div>
-
-
-            <div class="col-md-6" style="text-align:justify;">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, necessitatibus officiis facere nisi et, ut adipisci a quis quisquam vitae doloremque tempora repellat quae accusantium atque eum voluptatibus aperiam cumque.</p>
-              <p>Quia ratione, eum harum ab similique mollitia, nisi itaque vel voluptas ipsam dolore perferendis. Deleniti voluptatum error possimus ipsum, sed, obcaecati. Sit unde quia eum repudiandae molestiae reprehenderit harum nesciunt.</p>
-              <p>Quia ratione, eum harum ab similique mollitia, nisi itaque vel voluptas ipsam dolore perferendis. Deleniti voluptatum error possimus ipsum, sed, obcaecati. Sit unde quia eum repudiandae molestiae reprehenderit harum nesciunt.</p>
-              <p>Pariatur non consectetur libero, veniam inventore officia neque ipsum vel vitae repudiandae doloribus odit nihil dicta sit, magnam eos, in asperiores consequuntur eaque atque nam error. Dignissimos porro veniam voluptate.</p>
-              <p>Pariatur non consectetur libero, veniam inventore officia neque ipsum vel vitae repudiandae doloribus odit nihil dicta sit, magnam eos, in asperiores consequuntur eaque atque nam error. Dignissimos porro veniam voluptate.</p>
-            </div>
-            <div class="col-md-6" style="text-align:justify;">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, necessitatibus officiis facere nisi et, ut adipisci a quis quisquam vitae doloremque tempora repellat quae accusantium atque eum voluptatibus aperiam cumque.</p>
-              <p>Quia ratione, eum harum ab similique mollitia, nisi itaque vel voluptas ipsam dolore perferendis. Deleniti voluptatum error possimus ipsum, sed, obcaecati. Sit unde quia eum repudiandae molestiae reprehenderit harum nesciunt.</p>
-              <p>Pariatur non consectetur libero, veniam inventore officia neque ipsum vel vitae repudiandae doloribus odit nihil dicta sit, magnam eos, in asperiores consequuntur eaque atque nam error. Dignissimos porro veniam voluptate.</p>
-              <p>Quia ratione, eum harum ab similique mollitia, nisi itaque vel voluptas ipsam dolore perferendis. Deleniti voluptatum error possimus ipsum, sed, obcaecati. Sit unde quia eum repudiandae molestiae reprehenderit harum nesciunt.</p>
-            </div>
-  
-          </div>
-        </div>
-        </div>
-      </div>
-
-<!--comment section starts-->
-
-<div class="container">
-    <div class="row bootstrap snippets bootdeys">
-        <div class="col-md-8 col-sm-12">
-            <div class="comment-wrapper">
-                <div class="panel panel-info">
-                    
-                    <div class="panel-body">
-                        <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
-                        <br>
-                        <button type="submit" class="btn btn-primary" style="float:right;">Post</button>
-                        <div class="clearfix"></div>
-                        <hr>
-                        <ul class="media-list">
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <img src="images/person.jpeg" alt="" class="img-circle">
-                                </a>
-                                <div class="media-body">
-                                    <span class="text-muted pull-right">
-                                        <small class="text-muted">30 min ago</small>
-                                    </span>
-                                    <strong class="text-danger">@Ngamesh</strong>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Lorem ipsum dolor sit amet.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <img src="images/person2.jpg" alt="" class="img-circle">
-                                </a>
-                                <div class="media-body">
-                                    <span class="text-muted pull-right">
-                                        <small class="text-muted">1 hr ago</small>
-                                    </span>
-                                    <strong class="text-danger">@Rajneesh</strong>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Lorem ipsum dolor adipiscing elit.
-                                    </p>
-                                </div>
-                            </li>
-                            <li class="media">
-                                <a href="#" class="pull-left">
-                                    <img src="images/person1.jpeg" alt="" class="img-circle">
-                                </a>
-                                <div class="media-body">
-                                    <span class="text-muted pull-right">
-                                        <small class="text-muted">7 hr ago</small>
-                                    </span>
-                                    <strong class="text-danger">@chipmunk</strong>
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                    </p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+        <div class="col-lg-4 sidebar ftco-animate pl-md-5">
+                    <div class="sidebar-box ftco-animate">
+            <h3>Recent Blog</h3>
+            <div class="block-21 mb-4 d-flex">
+              <a href="blog-single.html" class="blog-img mr-4" style="background-image: url(images/footer.avif);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="blog-single.html">Manang Package Tour</a>
+                </h3>
+                <div class="meta">
+                  <div><a href="#"><span class="flaticon-calendar"></span> Feb 12, 2025</a></div>
+                  <div><a href="#"><span class="flaticon-user"></span> Admin</a></div>
                 </div>
+              </div>
             </div>
-    
+            <div class="block-21 mb-4 d-flex">
+              <a href="blog-single-rap-day.html" class="blog-img mr-4" style="background-image: url(images/uniq-poet.avif);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="blog-single-rap-day.html">World Rap Day with UNIQ POET</a>
+                </h3>
+                <div class="meta">
+                  <div><a href="#"><span class="flaticon-calendar"></span> Mar 5, 2025</a></div>
+                  <div><a href="#"><span class="flaticon-user"></span> Admin</a></div>
+                </div>
+              </div>
+            </div>
+            <div class="block-21 mb-4 d-flex">
+              <a href="blog-single-food-festive.html" class="blog-img mr-4" style="background-image: url(images/foodfest.avif);"></a>
+              <div class="text">
+                <h3 class="heading"><a href="blog-single-food-festive.html">Food Festive 2025</a>
+                </h3>
+                <div class="meta">
+                  <div><a href="#"><span class="flaticon-calendar"></span> Apr 10, 2025</a></div>
+                  <div><a href="#"><span class="flaticon-user"></span> Admin</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+
+    <div class="Blogtext">
+      <div class="row">
+        <div class="col-md-8 mb-4" style="text-align:center;">
+          <h2>The Hotel, Travel live brilliantly</h2>
+        </div>
+
+
+        <div class="col-md-6" style="text-align:justify;">
+          <p>Traveling is more than just visiting new locations; it's about the stories we collect and the connections
+            we make along the way. At The Hotel, we believe every guest's journey is unique, and we are committed to
+            making your stay in Pokhara a chapter you'll never forget. From the moment you arrive, the tranquility of
+            Lakeside envelopes you, offering a perfect blend of luxury and natural beauty.</p>
+          <p>The morning mist over Phewa Lake, the distant chime of monastery bells, and the warm smiles of the locals
+            are just the beginning. Our mission is to provide you with a home away from home where every corner is
+            designed to inspire and rejuvenate. Whether you're here for the adventure of a lifetime or a peaceful
+            retreat, we ensure that every moment is lived brilliantly.</p>
+        </div>
+        <div class="col-md-6" style="text-align:justify;">
+          <p>Our commitment to excellence translates into every detail of your stay. We take pride in our heritage while
+            embracing the comforts of modern hospitality. Our culinary team brings together the freshest local
+            ingredients to create dishes that tell a story of tradition and innovation, while our spa therapists use
+            ancient techniques to restore your balance.</p>
+          <p>Discover the true essence of mountain life with us. We invite you to explore the hidden trails, taste the
+            authentic flavors, and experience the warmth that makes this region so special. Join us at The Hotel, and
+            let your journey unfold with the elegance and brilliance it deserves.</p>
+        </div>
+
+      </div>
     </div>
-<!--comment section ends-->
+  </div>
+  </div>
+
+  <!--comment section starts-->
+
+  <div class="container">
+    <div class="row bootstrap snippets bootdeys">
+      <div class="col-md-8 col-sm-12">
+        <div class="comment-wrapper">
+          <div class="panel panel-info">
+            <div class="panel-body">
+              <textarea id="comment-input" class="form-control" placeholder="write a comment..." rows="3"></textarea>
+              <br>
+              <button id="post-comment-btn" type="submit" class="btn btn-primary" style="float:right;">Post</button>
+              <div class="clearfix"></div>
+              <hr>
+              <ul id="comment-list" class="media-list">
+                <li class="media">
+                  <a href="#" class="pull-left">
+                    <img src="images/person.avif" alt="" class="img-circle">
+                  </a>
+                  <div class="media-body">
+                    <span class="text-muted pull-right">
+                      <small class="text-muted">30 min ago</small>
+                    </span>
+                    <strong class="text-danger">@Ngamesh</strong>
+                    <p>
+                      The Manang tour description is so enticing! I've always wanted to visit that region.
+                    </p>
+                  </div>
+                </li>
+                <li class="media">
+                  <a href="#" class="pull-left">
+                    <img src="images/person2.avif" alt="" class="img-circle">
+                  </a>
+                  <div class="media-body">
+                    <span class="text-muted pull-right">
+                      <small class="text-muted">1 hr ago</small>
+                    </span>
+                    <strong class="text-danger">@Harrison</strong>
+                    <p>
+                      Great post! The hospitality at this hotel is truly top-tier. Highly recommended!
+                    </p>
+                  </div>
+                </li>
+                <li class="media">
+                  <a href="#" class="pull-left">
+                    <img src="images/person1.avif" alt="" class="img-circle">
+                  </a>
+                  <div class="media-body">
+                    <span class="text-muted pull-right">
+                      <small class="text-muted">7 hr ago</small>
+                    </span>
+                    <strong class="text-danger">@James</strong>
+                    <p>
+                      I love how you've captured the essence of Lakeside. It's truly a magical place.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--comment section ends-->
 
 
 
-<!-- End Footer -->
+  <!-- Modal -->
+  
 
-  <!-- Bootstrap  JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+
+
+  <script src="js/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!--  JavaScript for the theme -->
   <script src="js/scrolling-nav.js"></script>
-
-  <!-- limited time JavaScript-->
   <script src="js/limited.js"></script>
-
-  <!-- photo slide JavaScript-->
-  <script src="js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/booking.js"></script>
+  <script src="js/comments.js"></script>
+  <script src="js/footer-loader.js"></script>
 </body>
 
 </html>

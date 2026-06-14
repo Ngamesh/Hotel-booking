@@ -1,0 +1,175 @@
+/* Tablet Responsive Overrides */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    /* Container padding adjustment */
+    .contain {
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+
+    /* Hero slider image scaling */
+    .block-30,
+    .block-30 .row {
+        min-height: 500px !important;
+        height: 60vh !important;
+    }
+
+    .block-30 {
+        background-position: center center !important;
+        background-attachment: scroll !important;
+        /* Fixed background can be weird on tablets */
+    }
+
+    /* Hero heading adjustments */
+    .block-30 .heading {
+        font-size: 60px !important;
+    }
+
+    /* Booking form adjustments */
+    .block-32 {
+        margin-top: -50px !important;
+        padding: 20px !important;
+    }
+
+    .block-32 .form-control {
+        height: 45px !important;
+    }
+
+    .block-32 .btn {
+        min-height: 45px !important;
+        height: auto !important;
+        font-size: 15px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    /* Services section grid */
+    .site-section {
+        padding: 4em 0 !important;
+    }
+
+    .media.block-6 {
+        margin-bottom: 30px;
+    }
+
+    /* Special offer room images */
+    .room-img {
+        min-height: 400px !important;
+        height: auto !important;
+        background-position: center center !important;
+    }
+
+    /* Navbar brand and toggler spacing */
+    .navbar-brand img {
+        max-width: 100px !important;
+    }
+}
+
+/* Mobile Specific Adjustments */
+@media (max-width: 767px) {
+
+    /* Hero slider image scaling for mobile */
+    .block-30,
+    .block-30 .row {
+        min-height: 400px !important;
+        height: 50vh !important;
+    }
+
+    .block-30 {
+        background-position: center center !important;
+    }
+
+    .block-30 .heading {
+        font-size: 40px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .section-heading .heading {
+        font-size: 30px !important;
+        line-height: 1.18 !important;
+    }
+
+    .media.block-6 .heading {
+        font-size: 19px !important;
+        line-height: 1.25 !important;
+        margin-bottom: 8px !important;
+    }
+
+    .media.block-6 p {
+        font-size: 14px !important;
+        line-height: 1.55 !important;
+    }
+
+    /* Special offer room images for mobile */
+    .room-img {
+        min-height: 450px !important;
+        height: auto !important;
+        padding: 40px 0;
+    }
+
+    /* General container padding for mobile */
+    .contain {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+}
+
+/* Fix for navbar collapsing too late */
+@media (max-width: 991px) {
+    #mainNav .container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+    }
+
+    #mainNav .navbar-brand {
+        order: 2;
+        flex: 0 1 auto;
+        margin-right: 0;
+    }
+
+    #mainNav .navbar-brand img {
+        width: auto;
+        max-width: 88px;
+        height: auto;
+    }
+
+    #mainNav > .container > .btn {
+        order: 3;
+        flex: 0 0 auto;
+        margin-left: auto;
+        padding: 6px 18px !important;
+        font-size: 14px !important;
+        white-space: nowrap;
+    }
+
+    #mainNav .navbar-toggler {
+        order: 1;
+        flex: 0 0 auto;
+        margin-left: 0;
+        padding: 6px 9px;
+    }
+
+    .navbar-collapse {
+        order: 4;
+        flex-basis: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 20px;
+        margin-top: 10px;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    #mainNav .navbar-brand img {
+        max-width: 72px;
+    }
+
+    #mainNav > .container > .btn {
+        padding: 5px 12px !important;
+        font-size: 13px !important;
+    }
+}

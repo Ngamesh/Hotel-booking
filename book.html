@@ -9,75 +9,142 @@
   <meta name="author" content="">
 
   <title>Hotel</title>
-	 <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
   <link rel="shortcut icon" href="images/image.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/roomstyle.css">
-	<link rel="stylesheet" href="css/icomoon.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/roomstyle.css">
+  <link rel="stylesheet" href="css/icomoon.css">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="font/flaticon.css" rel="stylesheet">
- 
 
 
 
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
+
 <body>
-<div class="form-popup" id="myForm">
-  <h1>Login</h1>
-  <div class="container col-lg-6 mb-3 mb-lg-0 bg-light">
-    <h2>Reservation Online</h2>
-    <form action="/action_page.php">
-      <div class="form-group">
-        <label for="name">Name:</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" name="name">
-      </div>
-      <div class="form-group">
-        <label for="pwd">Email:</label>
-        <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email">
-      </div>
-      <div class="form-group">
-        <label for="email">Phone:</label>
-        <input type="number" class="form-control" id="phone" placeholder="Enter Your Phone Number" name="phone">
-      </div>
-      <div class="form-group">
-        <label for="email">Check In:</label>
-        <input type="date" class="form-control" id="checkin" placeholder="Enter Check In Date" name="checkin">
-      </div>
-      <div class="form-group">
-        <label for="email">Check Out:</label>
-        <input type="date" class="form-control" id="checkout" placeholder="Enter Check Out Date" name="checkout">
-      </div>
-      <div class="form-group">
-        <label for="adultcount">Adults</label>
-        <div class="field-icon-wrap">
-          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-          <select name="adultcount" id="adult" class="form-control" placeholder="2">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4+</option>
-          </select>
+  <div class="form-popup" id="myForm">
+    <h1>Login</h1>
+    <div class="container col-lg-6 mb-3 mb-lg-0 bg-light">
+      <h2>Reservation Online</h2>
+      <form id="reservation-form" action="#">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="name">Name<span class="required">*</span></label>
+              <input type="text" class="form-control" id="booking_name" placeholder="Enter Your Full Name" name="name" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="pwd">Email</label>
+              <input type="email" class="form-control" id="booking_email" placeholder="Enter Your Email" name="email">
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="childrencount">Children</label>
-        <div class="field-icon-wrap">
-          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-          <select name="childrencount" id="childern" class="form-control" placeholder="2">
-            <option value="">1</option>
-            <option value="">2</option>
-            <option value="">3</option>
-            <option value="">4+</option>
-          </select>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Phone<span class="required">*</span></label>
+              <input type="number" class="form-control" id="booking_phone" placeholder="Enter Your Phone Number" name="phone" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="roomcount">Rooms<span class="required">*</span></label>
+              <div class="field-icon-wrap">
+                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                <select name="roomcount" id="booking_roomcount" class="form-control" placeholder="2">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4+">4+</option>
+                </select>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <button type="submit" class="btn btn-primary">Book</button>
-      <button type="submit" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Check In<span class="required">*</span></label>
+              <input type="date" class="form-control" id="booking_checkin" placeholder="Enter Check In Date" name="checkin" required>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="email">Check Out</label>
+              <input type="date" class="form-control" id="booking_checkout" placeholder="Enter Check Out Date" name="checkout">
+            </div>
+          </div>
+        </div>
+        <div class="form-group time-chips-group">
+          <label>Time</label>
+          <div class="time-chips-hour d-flex flex-wrap" style="gap: 5px; margin-top: 5px;">
+            <div class="tc-btn hour-chip rounded-pill" data-hour="01:00">1</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="02:00">2</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="03:00">3</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="04:00">4</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="05:00">5</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="06:00">6</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="07:00">7</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="08:00">8</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="09:00">9</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="10:00">10</div>
+            <div class="tc-btn hour-chip rounded-pill" data-hour="11:00">11</div>
+            <div class="tc-btn hour-chip active rounded-pill" data-hour="12:00">12</div>
+          </div>
+          <div class="time-chips-period d-flex flex-wrap" style="gap: 5px; margin-top: 10px;">
+            <div class="tc-btn period-chip rounded-pill" data-period="AM">AM</div>
+            <div class="tc-btn period-chip active rounded-pill" data-period="PM">PM</div>
+          </div>
+          <input type="hidden" id="time" name="time" value="12:00 PM">
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="adultcount">Adult</label>
+              <div class="field-icon-wrap">
+                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                <select name="adultcount" id="adult" class="form-control" placeholder="2">
+                  <option value="">1</option>
+                  <option value="">2</option>
+                  <option value="">3</option>
+                  <option value="">4+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="childrencount">Children</label>
+              <div class="field-icon-wrap">
+                <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                <select name="childrencount" id="childern" class="form-control" placeholder="2">
+                  <option value="0">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4+">4+</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
   </div>
-</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="js/booking.js"></script>
 </body>
+
+</html>
+
 </html>

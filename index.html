@@ -23,553 +23,659 @@
   <!--new offer css-->
   <link href="css/offer.css" rel="stylesheet">
   <link rel="stylesheet" href="css/offerowl.carousel.min.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Custom override for home page carousel height -->
+  <style>
+    .block-31 .block-30,
+    .block-31 .block-30 .row {
+      min-height: 85vh !important;
+      height: 85vh !important;
+    }
 
+    .overview-section {
+      transition: all 0.3s ease;
+    }
 
+    .view-page-link {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 500;
+      color: #fc3c3c;
+      opacity: 1;
+      transition: transform 0.3s ease, color 0.3s ease;
+      text-decoration: none;
+    }
 
+    .view-page-link:hover {
+      color: #e22d2d;
+      text-decoration: none;
+    }
 
-
+    .overview-section:hover .view-page-link {
+      transform: scale(1.1) translateX(5px);
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 </head>
-      <!-- nav bar -->
+<!-- nav bar - loaded from js/navbar-loader.js -->
+
 <body id="page-top">
-  <nav class="navbar navbar-expand-sm navbar-dark  fixed-top justify-content-end" id="mainNav" style=" opacity:95%;">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/image.png"></a>
-      <button class="btn btn-primary py-1 px-5" data-toggle="modal" data-target="#exampleModal">Book Now</button>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" 
-      aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse flex-grow-0" id="navbarResponsive">
-        <ul class="navbar-nav text-right">
-          <li class="nav-item" >
-            <a class="nav-link js-scroll-trigger" href="services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="room.html">Rooms</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="restaurant.html">Restaurant</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="blog.html">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="faq.html">FAQ</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <script src="js/navbar-loader.js"></script>
   <!-- sliding images -->
   <header>
     <div class="block-31" style="position: relative;">
-    <div class="owl-carousel loop-block-31 ">
-      <div class="block-30 item" style="background-image: url('images/image1.jpg');" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-10">
-              <span class="subheading-sm">Welcome</span>
-              <h2 class="heading">A Luxury Experience</h2>
-              <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Book Now
-              </button></p>
+      <div class="owl-carousel loop-block-31 ">
+        <div class="block-30 item" style="background-image: url('images/image1.avif');"
+          data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-10">
+                <span class="subheading-sm">Welcome</span>
+                <h2 class="heading">A Luxury Experience</h2>
+                <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal"
+                    data-target="#reservationModal">
+                    Book Now
+                  </button></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="block-30 item" style="background-image: url('images/spa.jpg');" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-10">
-              <span class="subheading-sm">Welcome</span>
-              <h2 class="heading">Simple <br>&amp; Elegant</h2>
-              <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Book Now
-              </button></p>
+        <div class="block-30 item" style="background-image: url('images/spa.avif');"
+          data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-10">
+                <span class="subheading-sm">Welcome</span>
+                <h2 class="heading">Simple <br>&amp; Elegant</h2>
+                <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal"
+                    data-target="#reservationModal">
+                    Book Now
+                  </button></p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="block-30 item" style="background-image: url('images/coffee.jpg');" data-stellar-background-ratio="0.5">
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-md-10">
-              <span class="subheading-sm">Welcome</span>
-              <h2 class="heading">Food <br> &amp; Drinks</h2>
-              <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Book Now
-              </button></p>
+        <div class="block-30 item" style="background-image: url('images/coffee.avif');"
+          data-stellar-background-ratio="0.5">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-10">
+                <span class="subheading-sm">Welcome</span>
+                <h2 class="heading">Food <br> &amp; Drinks</h2>
+                <p><button type="button" class="btn py-4 px-5 btn-primary" data-toggle="modal"
+                    data-target="#reservationModal">
+                    Book Now
+                  </button></p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
     <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-12">
-  
-            <div class="block-32">
-              <form action="#">
-                <div class="row">
-                  <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                    <label for="checkin_date">Check In<span class="required">*</span></label>
-                    <div class="field-icon-wrap">
-                      <div class="icon"><span class="icon-calendar"></span></div>
-                      <input type="date" id="checkin_date" class="form-control" placeholder="month/day/year">
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-                    <label for="checkout_date">Check Out</label>
-                    <div class="field-icon-wrap">
-                      <div class="icon"><span class="icon-calendar"></span></div>
-                      <input type="date" id="checkout_date" class="form-control" placeholder="month/day/year">
-                    </div>
-                  </div>
-                  <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
-                    <div class="row">
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label for="roomcount">Rooms<span class="required">*</span></label>
-                        <div class="field-icon-wrap">
-                          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                          <select name="roomcount" id="roomcount" class="form-control">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4+</option>
-                          </select>
-                        </div>
-                      </div>
-                      <div class="col-md-6 mb-3 mb-md-0">
-                        <label for="personcount">Person</label>
-                        <div class="field-icon-wrap">
-                          <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-                          <select name="person count" id="personcount" class="form-control">
-                            <option value="">1</option>
-                            <option value="">2</option>
-                            <option value="">3</option>
-                            <option value="">4+</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-lg-3 align-self-end">
-                    <button class="btn btn-primary btn-block">Check Availabilty</button>
+      <div class="row mb-5">
+        <div class="col-md-12">
+
+          <div class="block-32">
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="checkin_date">Check In<span class="required">*</span></label>
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="icon-calendar"></span></div>
+                    <input type="date" id="checkin_date" class="form-control" placeholder="month/day/year">
                   </div>
                 </div>
-              </form>
-            </div>
+                <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
+                  <label for="checkout_date">Check Out</label>
+                  <div class="field-icon-wrap">
+                    <div class="icon"><span class="icon-calendar"></span></div>
+                    <input type="date" id="checkout_date" class="form-control" placeholder="month/day/year">
+                  </div>
+                </div>
+                <div class="col-md-6 mb-3 mb-md-0 col-lg-3">
+                  <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label for="roomcount">Rooms<span class="required">*</span></label>
+                      <div class="field-icon-wrap">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="roomcount" id="roomcount" class="form-control">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4+</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <label for="personcount">Person</label>
+                      <div class="field-icon-wrap">
+                        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+                        <select name="person count" id="personcount" class="form-control">
+                          <option value="">1</option>
+                          <option value="">2</option>
+                          <option value="">3</option>
+                          <option value="">4+</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 align-self-end">
+                  <button type="button" id="check-availability-btn" class="btn btn-primary btn-block">Check
+                    Availability</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
+      </div>
     </div>
   </header>
 
+  <!-- welcome -->
+  <section class="welcome-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9">
+          <div class="welcome-copy">
+            <span class="welcome-eyebrow">Welcome to Hotel Lakeside</span>
+            <h2 class="heading">A calmer way to stay</h2>
+            <p class="lead">
+              Set beside the relaxed spirit of Pokhara, Hotel Lakeside brings warm hospitality, comfortable suites,
+              thoughtful dining, and event-ready spaces together in one elegant stay.
+            </p>
+            <p>
+              Spend your days exploring lakeside cafes, scenic hikes, trekking routes, boating, paragliding, and the
+              natural beauty around the valley, then return to a place designed to feel simple, personal, and calm.
+            </p>
+            <div class="welcome-highlights">
+              <div>
+                <strong>24/7</strong>
+                <span>Guest Support</span>
+              </div>
+              <div>
+                <strong>3</strong>
+                <span>Suite Styles</span>
+              </div>
+              <div>
+                <strong>Events</strong>
+                <span>Halls &amp; Dining</span>
+              </div>
+            </div>
+            <a href="about.html" class="btn btn-primary welcome-btn">Explore Hotel</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!--special offer-->
+  <!--special offer-->
 
-<!--new offer-->
-<section class="site-section py-3">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-            <div class="single-slider slider">
-              <div class="item">
-                <div class="room-img" style="background-image: url(images/image4.jpg); alt: image placeholder;">
-                  <div class="container py-5" style=" text-align: center; color: azure;">
-                    <div class="row align-items-center">
-                      <div class="col-md-8 mx-auto">
-                        <h1> dashain offer</h1>
-                        <h2>20% off in every booking during <br> Dashain festive month. </h2>
-            <p><a class="btn py-4 px-5 btn-primary  " href="offer.html" >
-                View Offers
-              </a></p>
-                      </div>
+  <!--new offer-->
+  <section class="site-section py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="single-slider owl-carousel">
+            <div class="item">
+              <div class="room-img" style="background-image: url(images/tihar.avif); position: relative;">
+                <div
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.25);">
+                </div>
+                <div class="container py-5 d-flex align-items-center justify-content-center"
+                  style="position: relative; z-index: 1; text-align: center; color: #fff; min-height: 100%;">
+                  <div class="row align-items-center">
+                    <div class="col-md-8 mx-auto">
+                      <h1>Tihar Festival Special</h1>
+                      <h2>15% off during the beautiful Festival of Lights.</h2>
+                      <p style="font-size:17px; color: #eee;">Experience the glow of Tihar with our beautifully
+                        decorated environment and complimentary traditional sweets.</p>
                     </div>
                   </div>
                 </div>
+
               </div>
-              <div class="item">
-                <div class="room-img" style="background-image: url(images/image4.jpg);">
-                  <div class="container py-5" style=" text-align: center; color: azure;">
-                    <div class="row align-items-center">
-                      <div class="col-md-8 mx-auto">
-                        <h1> dashain thorei offer</h1>
-                        <h2>10% off in every booking during <br> Dashain festive month. </h2>
-                        <p><a class="btn py-4 px-5 btn-primary  " href="offer.html">
-                            View Offers
-                          </a></p>
-                      </div>
-                    </div>
-                  </div>
-                  
+            </div>
+            <div class="item">
+              <div class="room-img"
+                style="background-image: url(images/holi.avif); alt: image placeholder; position: relative;">
+                <div
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.25);">
                 </div>
-              </div>
-              <div class="item">
-                <div class="room-img" style="background-image: url(images/image4.jpg);">
-                  <div class="container py-5" style=" text-align: center; color: azure;">
-                    <div class="row align-items-center">
-                      <div class="col-md-8 mx-auto">
-                        <h1> dashain dherei offer</h1>
-                        <h2>30% off in every booking during <br> Dashain festive month. </h2>
-                        <p><a class="btn py-4 px-5 btn-primary  " href="offer.html">
-                            View Offers
-                          </a></p>
-                      </div>
+                <div class="container py-5 d-flex align-items-center justify-content-center"
+                  style="position: relative; z-index: 1; text-align: center; color: #fff; min-height: 100%;">
+                  <div class="row align-items-center">
+                    <div class="col-md-8 mx-auto">
+                      <h1>Holi Festival Offer</h1>
+                      <h2>Celebrate the Festival of Colors with a 25% discount!</h2>
+                      <p style="font-size:17px; color: #eee;">Enjoy a vibrant stay with complimentary festive treats and
+                        access to our special Holi event.</p>
                     </div>
                   </div>
-                  
                 </div>
               </div>
             </div>
+            <div class="item">
+              <div class="room-img" style="background-image: url(images/honeymoon.avif); position: relative;">
+                <div
+                  style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.25);">
+                </div>
+                <div class="container py-5 d-flex align-items-center justify-content-center"
+                  style="position: relative; z-index: 1; text-align: center; color: #fff; min-height: 100%;">
+                  <div class="row align-items-center">
+                    <div class="col-md-8 mx-auto">
+                      <h1>Romantic Honeymoon Package</h1>
+                      <h2>30% off for newly-weds — Romantic stays with exclusive amenities.</h2>
+                      <p style="font-size:17px; color: #eee;">Enjoy a candle-lit dinner, couple spa, and a private
+                        balcony room with breathtaking views.</p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
           </div>
+        </div>
       </div> <!-- .col-md-8 -->
     </div>
-  </div>
-</section> <!-- .section -->
+  </section> <!-- .section -->
 
- 
-<!--services-->
-<div class="container" id="services">
-<div class="row site-section">
-  <div class="col-md-12">
-    <div class="row mb-5">
-      <div class="col-md-7 section-heading">
-        <h2 class="heading">Facilities &amp; Services</h2>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 col-lg-4">
-    <div class="media block-6">
-      <div class="icon"><span class="flaticon-bed"></span></div>
-      <div class="media-body">
-        <h3 class="heading">Luxury Rooms</h3>
-        <p>If you like to treat yourself to a touch of luxury once in a while, our hotel offers stunning open plan luxury rooms with our VIP Luxury Room</p>
-      </div>
-    </div>      
-  </div>
-  <div class="col-md-6 col-lg-4">
-    <div class="media block-6">
-      <div class="icon"><span class="flaticon-laptop"></span></div>
-      <div class="media-body">
-        <h3 class="heading">Fast &amp; Free Wifi</h3>
-        <p>Fast WiFi is accessible throughout the hotel, with plenty of open areas throughout our hotel you're able to work wherever the mood takes you</p>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6 col-lg-4">
-    <div class="media block-6">
-      <div class="icon"><span class="flaticon-customer-service"></span></div>
-      <div class="media-body">
-        <h3 class="heading">Call Us 24/7</h3>
-        <p>We provide our guests with day and night reception, a wake-up call service and also with 24/7 call service</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="col-md-6 col-lg-4">
-    <div class="media block-6">
-      <div class="icon"><span class="flaticon-jeep"></span></div>
-      <div class="media-body">
-        <h3 class="heading">Travel Accomodation</h3>
-        <p>We're more than just hotel; discover a lot of accommodation options, our hotel offers a tourist friendly accommodation throughout the country</p>
+  <!--services-->
+  <div class="container pb-5 overview-section" id="services" style="margin-top: 2rem;">
+    <div class="row site-section">
+      <div class="col-md-12">
+        <div class="row mb-5 align-items-center">
+          <div class="col-md-7 section-heading mb-0">
+            <h2 class="heading mb-0">Facilities &amp; Services</h2>
+          </div>
+          <div class="col-md-5 text-md-right mt-3 mt-md-0">
+            <a href="services.html" class="view-page-link">See More &rarr;</a>
+          </div>
+        </div>
       </div>
-    </div>      
-  </div>
+      <div class="col-md-12" style="border-radius: 12px;">
+        <div class="row m-0">
+          <div class="col-md-6 col-lg-4">
+            <div class="media block-6">
+              <div class="icon"><span class="flaticon-bed"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Luxury Rooms</h3>
+                <p>If you like to treat yourself to a touch of luxury once in a while, our hotel offers stunning open
+                  plan
+                  luxury rooms with our VIP Luxury Room</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="media block-6">
+              <div class="icon"><span class="flaticon-laptop"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Fast &amp; Free Wifi</h3>
+                <p>Fast WiFi is accessible throughout the hotel, with plenty of open areas throughout our hotel you're
+                  able
+                  to work wherever the mood takes you</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="media block-6">
+              <div class="icon"><span class="flaticon-customer-service"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Call Us 24/7</h3>
+                <p>We provide our guests with day and night reception, a wake-up call service and also with 24/7 call
+                  service</p>
+              </div>
+            </div>
+          </div>
 
-  <div class="col-md-6 col-lg-4">
-    <div class="media block-6">
-      <div class="icon"><span class="flaticon-credit-card"></span></div>
-      <div class="media-body">
-        <h3 class="heading">Accepts Credit Card</h3>
-        <p>You can book a hotel room with either a credit or a debit card, we give 4% discount with each payment with credit or debit card</p>
+          <div class="col-md-6 col-lg-4">
+            <div class="media block-6">
+              <div class="icon"><span class="flaticon-jeep"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Travel Accomodation</h3>
+                <p>We're more than just hotel; discover a lot of accommodation options, our hotel offers a tourist
+                  friendly
+                  accommodation throughout the country</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="media block-6">
+              <div class="icon"><span class="flaticon-credit-card"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Accepts Credit Card</h3>
+                <p>You can book a hotel room with either a credit or a debit card, we give 4% discount with each payment
+                  with credit or debit card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="media block-6">
+              <div class="icon"><span class="flaticon-beauty-treatment"></span></div>
+              <div class="media-body">
+                <h3 class="heading">Spa</h3>
+                <p>We do our best in service, You have your best in pleasure, find out about our antique Nepelese
+                  traditional spa</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="col-md-6 col-lg-4">
-    <div class="media block-6">
-      <div class="icon"><span class="flaticon-beauty-treatment"></span></div>
-      <div class="media-body">
-        <h3 class="heading">Spa</h3>
-        <p>We do our best in service, You have your best in pleasure, find out about our antique Nepelese traditional spa</p>
-      </div>
-    </div>
-    
   </div>
-  <a href="services.html" style="color: #fc3c3c"> See More...</a>
-</div>
-</div>
 
   <!-- featured rooms -->
 
- 
-     
-
-    <div class="site-section block-13 bg-light" id="rooms">
-      <div class="container">
-         <div class="row mb-5">
-            <div class="col-md-7 section-heading">
-              <h2 class="heading">Rooms &amp; Suites</h2>
-              
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="nonloop-block-13 owl-carousel">
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_1.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Single Room</h2>
-                        
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_2.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Family Room</h2>
-                        
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_3.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">VIP Room</h2>
-                        
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_4.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Single Room</h2>
-                        
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_5.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Family Room</h2>
-                        
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img_6.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">VIP Room</h2>
-                      
-                      </div>
-                    </div>
-                  </div>
-                  
-              </div>
-              <a href="Room.html" style="color:#fc3c3c;">See More...</a>
-    
-            </div> <!-- .col-md-12 -->
-          </div>
-      </div>
-    </div>
 
 
 
-	
-	
-<!---Foods------------------------------------------------------>
-	<div class="site-section block-13 bg-light py-1" id="food">
-      <div class="container">
-         <div class="row mb-5">
-            <div class="col-md-7 section-heading">
-              <h2 class="heading">Foods &amp; Drinks</h2>
-              
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col-md-12">
-              <div class="nonloop-block-13 owl-carousel">
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img-02.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Drink</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img-08.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Breakfast</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img-04.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Burger</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/heavy.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Lunch</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/coffee.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Coffee</h2>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="item">
-                    <div class="block-34">
-                      <div class="image">
-                        <a href="#"><img src="images/img-05.jpg" alt="Image placeholder"></a>
-                      </div>
-                      <div class="text">
-                        <h2 class="heading">Salad</h2>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  
-              </div>
-              <a href="restaurant.html" style="color:#fc3c3c;">See More...</a>
-            </div> <!-- .col-md-12 -->
-          </div>
-      </div>
-    </div>
-
-
-    <!-- review section -->
-<div class="site-section bg-lightt">
-      <div class="container">
-        <div class="row mb-5">
-          <div class="col-md-7 section-heading">
-            <span class="subheading-sm">Reviews</span>
-            <h2 class="heading">Guest Reviews</h2>
-          </div>
+  <div class="site-section block-13 bg-light overview-section" id="rooms">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-7 section-heading mb-0">
+          <h2 class="heading mb-0">Suites &amp; Halls</h2>
         </div>
-        <div class="row">
-          <div class="col-md-6 col-lg-4">
+        <div class="col-md-5 text-md-right mt-3 mt-md-0">
+          <a href="Room.html" class="view-page-link">See More &rarr;</a>
+        </div>
+      </div>
 
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="images/person.jpeg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Ngamesh Raj Bhandari</h2>
-                  <span class="meta">Satisfied Customer</span>
+      <div class="row" style="border-radius: 12px; margin: 0;">
+        <div class="col-md-12">
+          <div class="nonloop-block-13 owl-carousel">
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Single Suite</h2>
+                  <a href="rooms-single.html" class="card-hover-link">View</a>
                 </div>
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
-                </blockquote>
+                <div class="image">
+                  <a href="rooms-single.html"><img src="images/img_1.avif" alt="Image placeholder"></a>
+                </div>
               </div>
             </div>
 
-          </div>
-          <div class="col-md-6 col-lg-4">
-
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="images/person2.jpg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Nancy Green</h2>
-                  <span class="meta">Satisfied Customer</span>
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Family Suite</h2>
+                  <a href="rooms-family.html" class="card-hover-link">View</a>
                 </div>
-              </div>
-              <div class="text">
-                <blockquote>
-                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
-                </blockquote>
+                <div class="image">
+                  <a href="rooms-family.html"><img src="images/img_2.avif" alt="Image placeholder"></a>
+                </div>
               </div>
             </div>
 
-          </div>
-          <div class="col-md-6 col-lg-4">
-
-            <div class="block-33">
-              <div class="vcard d-flex mb-3">
-                <div class="image align-self-center"><img src="images/person1.jpeg" alt="Person here"></div>
-                <div class="name-text align-self-center">
-                  <h2 class="heading">Elizabeth Charles</h2>
-                  <span class="meta">Satisfied Customer</span>
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Presidential Suite</h2>
+                  <a href="rooms-vip.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="rooms-vip.html"><img src="images/image1.avif" alt="Image placeholder"></a>
                 </div>
               </div>
-              <div class="text">
-                <blockquote>
-                  <p>&rdquo; Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquid. Atque dolore esse veritatis iusto eaque perferendis non dolorem fugiat voluptatibus vitae error ad itaque inventore accusantium tempore dolores sunt. &ldquo;</p>
-                </blockquote>
+            </div>
+
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Grand Banquet Hall</h2>
+                  <a href="Room.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Room.html"><img src="images/banquet.avif" alt="Image placeholder"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Event Hall</h2>
+                  <a href="Room.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Room.html"><img src="images/event.avif" alt="Image placeholder"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Meeting Hall</h2>
+                  <a href="Room.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Room.html"><img src="images/E1.avif" alt="Image placeholder"></a>
+                </div>
               </div>
             </div>
 
           </div>
         </div>
+
+      </div> <!-- .col-md-12 -->
+    </div>
+  </div>
+
+
+
+
+
+  <!---Foods------------------------------------------------------>
+  <div class="site-section block-13 bg-light overview-section" id="food">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-7 section-heading mb-0">
+          <h2 class="heading mb-0">Foods &amp; Drinks</h2>
+        </div>
+        <div class="col-md-5 text-md-right mt-3 mt-md-0">
+          <a href="Restaurant.html" class="view-page-link">See More &rarr;</a>
+        </div>
+      </div>
+
+      <div class="row" style="border-radius: 12px; margin: 0;">
+        <div class="col-md-12">
+          <div class="nonloop-block-13 owl-carousel">
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Classic Burger</h2>
+                  <a href="Restaurant.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Restaurant.html"><img src="images/burger.avif" alt="Image placeholder"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Artisan Coffee</h2>
+                  <a href="Restaurant.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Restaurant.html"><img src="images/coffee.avif" alt="Image placeholder"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Hearty Lunch</h2>
+                  <a href="Restaurant.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Restaurant.html"><img src="images/heavy.avif" alt="Image placeholder"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Refreshing Drink</h2>
+                  <a href="Restaurant.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Restaurant.html"><img src="images/img-02.avif" alt="Image placeholder"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Traditional Breakfast</h2>
+                  <a href="Restaurant.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Restaurant.html"><img src="images/img-08.avif" alt="Image placeholder"></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="block-34">
+                <div class="text d-flex align-items-center justify-content-between w-100">
+                  <h2 class="heading mb-0">Fresh Salad</h2>
+                  <a href="Restaurant.html" class="card-hover-link">View</a>
+                </div>
+                <div class="image">
+                  <a href="Restaurant.html"><img src="images/img-05.avif" alt="Image placeholder"></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div> <!-- .col-md-12 -->
+    </div>
+  </div>
+
+  <div class="site-section bg-light overview-section" id="blog-overview">
+    <div class="container">
+      <div class="row mb-5 align-items-center">
+        <div class="col-md-7 section-heading mb-0">
+          <h2 class="heading mb-0">Latest From Blog</h2>
+        </div>
+        <div class="col-md-5 text-md-right mt-3 mt-md-0">
+          <a href="blog.html" class="view-page-link">See More &rarr;</a>
+        </div>
+      </div>
+      <div class="row" style="border-radius: 12px; margin: 0;">
+        <div class="col-md-12">
+          <div class="block-3 d-md-flex bg-white">
+            <div class="image w-50"
+              style="background-image: url('images/footer.avif'); background-size: cover; background-position: center; min-height: 400px;">
+            </div>
+            <div class="text d-flex align-items-center p-5">
+              <div>
+                <h2 class="heading">Manang Package Tour</h2>
+                <p class="lead">Experience the raw beauty of the Himalayas with our exclusive Manang package tour. This
+                  journey takes you through scenic mountain trails, ancient monasteries, and traditional villages...</p>
+                <p><a href="blog-single.html" class="btn btn-primary py-3 px-5 mt-3">Read Full Post</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-<!--end of reviews-->
-	
-	
-<!--booking
+  </div>
+
+
+  <!-- review section -->
+  <div class="site-section bg-lightt">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-7 section-heading">
+          <span class="subheading-sm">Reviews</span>
+          <h2 class="heading">Guest Reviews</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-33">
+            <div class="vcard d-flex mb-3">
+              <div class="image align-self-center"><img src="images/person.avif" alt="Person here"></div>
+              <div class="name-text align-self-center">
+                <h2 class="heading">Ngamesh Raj Bhandari</h2>
+                <span class="meta">Satisfied Customer</span>
+              </div>
+            </div>
+            <div class="text">
+              <blockquote>
+                <p>&rdquo; The attention to detail at this hotel is truly remarkable. From the seamless check-in process
+                  to
+                  the exquisite dining options, every aspect of my stay exceeded expectations. A truly luxury
+                  experience in the heart of the city. &ldquo;</p>
+              </blockquote>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-33">
+            <div class="vcard d-flex mb-3">
+              <div class="image align-self-center"><img src="images/person2.avif" alt="Person here"></div>
+              <div class="name-text align-self-center">
+                <h2 class="heading">Harrison Neale</h2>
+                <span class="meta">Satisfied Customer</span>
+              </div>
+            </div>
+            <div class="text">
+              <blockquote>
+                <p>&rdquo; I was thoroughly impressed by the hospitality and the professional service. The rooms are
+                  elegant and incredibly comfortable. I particularly enjoyed the traditional spa treatments - it's a
+                  must-try for anyone staying here! &ldquo;</p>
+              </blockquote>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-4">
+
+          <div class="block-33">
+            <div class="vcard d-flex mb-3">
+              <div class="image align-self-center"><img src="images/person1.avif" alt="Person here"></div>
+              <div class="name-text align-self-center">
+                <h2 class="heading">James Lyard</h2>
+                <span class="meta">Satisfied Customer</span>
+              </div>
+            </div>
+            <div class="text">
+              <blockquote>
+                <p>&rdquo; Exceptional service and a wonderful atmosphere. The staff went above and beyond to make our
+                  family stay memorable. The dining experience was top-notch with a fantastic variety of local and
+                  international dishes. &ldquo;</p>
+              </blockquote>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end of reviews-->
+
+
+  <!--booking
 <section id="booking" class="bg-light py-1" style="opacity: 95%;">
   <div class="contain">
     <div class="py-0" style="opacity: 100%;">
@@ -588,97 +694,46 @@
                 </div>
             </div>
             -->
-          
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title" id="exampleModalLabel">Reservation Form</h2>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-  <div class="container col-lg-6 ">
-  <form action="/action_page.php">
-    <div class="form-group">
-      <label for="name">Name<span class="required">*</span></label>
-      <input type="text" class="form-control" id="name" placeholder="Enter Your Full Name" name="name">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Email</label>
-      <input type="email" class="form-control" id="email" placeholder="Enter Your Email" name="email">
-    </div>
-    <div class="form-group">
-      <label for="email">Phone<span class="required">*</span></label>
-      <input type="number" class="form-control" id="phone" placeholder="Enter Your Phone Number" name="phone">
-    </div>
-    <div class="form-group">
-      <label for="email">Check In<span class="required">*</span></label>
-      <input type="date" class="form-control" id="checkin" placeholder="Enter Check In Date" name="checkin">
-    </div>
-    <div class="form-group">
-      <label for="email">Check Out</label>
-      <input type="date" class="form-control" id="checkout" placeholder="Enter Check Out Date" name="checkout">
-    </div>
-    <div class="form-group">
-      <label for="time">Time</label>
-      <input type="time" class="form-control" id="time" placeholder="time" name="time">
-    </div>
-    <div class="form-group">
-      <label for="adultcount">Adult</label>
-      <div class="field-icon-wrap">
-        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-        <select name="adultcount" id="adult" class="form-control" placeholder="2">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4+</option>
-        </select>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="childrencount">Children</label>
-      <div class="field-icon-wrap">
-        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-        <select name="childrencount" id="childern" class="form-control" placeholder="2">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4+</option>
-        </select>
-      </div>
-    </div>
-    <div class="form-group">
-      <label for="roomcount">Rooms<span class="required">*</span></label>
-      <div class="field-icon-wrap">
-        <div class="icon"><span class="ion-ios-arrow-down"></span></div>
-        <select name="roomcount" id="roomcount" class="form-control" placeholder="2">
-          <option value="">1</option>
-          <option value="">2</option>
-          <option value="">3</option>
-          <option value="">4+</option>
-        </select>
-      </div>
-    </div>
 
-  </form>
-</div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-        <button type="submit" class="btn btn-primary">Book</button>
+
+  <!-- Offer Expired Modal -->
+  <div class="modal fade" id="offerExpiredModal" tabindex="-1" role="dialog" aria-labelledby="offerExpiredModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content" style="border-radius: 12px; border: none; overflow: hidden;">
+        <div class="modal-header border-0"
+          style="background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); padding: 30px 30px 15px;">
+          <div style="text-align: center; width: 100%;">
+            <div style="font-size: 52px; margin-bottom: 10px;">⏳</div>
+            <h4 class="modal-title" style="color: #fff; font-weight: 700; letter-spacing: 1px;"
+              id="offerExpiredModalLabel">Offer Expired</h4>
+          </div>
+        </div>
+        <div class="modal-body" style="background: #fff; padding: 25px 35px; text-align: center;">
+          <p style="font-size: 17px; color: #555; line-height: 1.7; margin-bottom: 8px;">
+            <strong style="color: #333;">Sorry, this offer has expired.</strong>
+          </p>
+          <p style="font-size: 15px; color: #888;">
+            But don't worry — we regularly update our deals. Check back soon or explore our latest packages!
+          </p>
+        </div>
+        <div class="modal-footer border-0 justify-content-center" style="background: #f8f8f8; padding: 18px;">
+          <button type="button" class="btn btn-primary px-4 py-2" data-dismiss="modal" style="border-radius: 25px;">
+            Close
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-    
+
+  <!-- Modal -->
 
 
 
-<!-- checkin and out book second
+
+
+  <!-- checkin and out book second
     <div class="col-lg-6 mb-3 mb-lg-0 bg-secondary">
             <div class="container-form">
                 <form action="#">
@@ -738,7 +793,7 @@
       <div class="row">
 
         <div class="col-lg-6 mb-3 mb-lg-0">
-          <div class="hover hover-2 text-white rounded"><img src="images/image3.jpg" alt="2">
+          <div class="hover hover-2 text-white rounded"><img src="images/image3.avif" alt="2">
             <div class="hover-overlay"></div>
             <div class="hover-2-content px-5 py-4">
               <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">One Bed </span>Room</h3>
@@ -749,7 +804,7 @@
   
 
         <div class="col-lg-6">
-          <div class="hover hover-2 text-white rounded"><img src="images/image2.jpg" alt="">
+          <div class="hover hover-2 text-white rounded"><img src="images/image2.avif" alt="">
             <div class="hover-overlay"></div>
             <div class="hover-2-content px-5 py-4">
               <h3 class="hover-2-title text-uppercase font-weight-bold mb-0"> <span class="font-weight-light">Two Bed </span>Room</h3>
@@ -763,118 +818,20 @@
 </section>
 -->
 
-
-<!-- Start Footer -->
-<footer class="footer-area bg-f">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 col-md-6">
-        <h3>review our hotel</h3>
-        <div class="review_form">
-          <form class="review_form">
-            <input name="name" id="name" class="form_input" placeholder="Enter Name" type="text">
-            <textarea name="review" id="review" rows="2" class="form_input" placeholder="Give Review" type="text"></textarea>
-            <button type="submit" class="submit">SUBMIT</button>
-            <div class="clearfix"></div>
-          </form>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-6">
-        <h3>Contact information</h3>
-        <p class="lead">Lakside, Pokhara <br> Street-19</p>
-        <p class="lead"><a href="#">+977 9876543210</a> <br> <a href="#"> +977 9811111111</a></p>
-        <p><a href="#"> lakeside@hotel.book.com</a> <br>
-          <a href="#"> lakeside@hotel.inquiry.com</a></p>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <h3>Subscribe</h3>
-        <div class="subscribe_form">
-          <form class="subscribe_form">
-            <input name="email" id="subs-email" class="form_input" placeholder="Enter Email" type="email">
-            <button type="submit" class="submit">SUBSCRIBE</button>
-            <div class="clearfix"></div>
-          </form>
-        </div>
-        <ul class="list-inline f-social">
-          <li class="list-inline-item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  <div class="copyright">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <p class="company-name">All Rights Reserved.<br> <a href="#">The Hotel</a> &copy; 2021  Design By  
-        <a href="#">DigiHawk</a></p>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-</footer>
-<!-- End Footer -->
-
   <!-- Bootstrap  JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <!-- Plugin JavaScript -->
-  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-  <!--  JavaScript for the theme -->
-  <script src="js/scrolling-nav.js"></script>
-
-  <!-- photo slide JavaScript-->
-  <script src="js/bootstrap.min.js"></script>
-
-  <!-- popup messenger-->
-  <div class="fb-customerchat"
- page_id="110876764070001"
- minimized="true">
-</div>
-<script>
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId            : '912333495590130',
-      autoLogAppEvents : true,
-      xfbml            : true,
-      version          : 'v2.12'
-    });
-  };
-(function(d, s, id){
-     var js, fjs = d.getElementsByTagName(s)[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement(s); 
-     js.id = id;
-     js.src = "https://connect.facebook.net/en_US/sdk.js";
-     fjs.parentNode.insertBefore(js, fjs);
-   }(document, 'script', 'facebook-jssdk'));
-</script>
-	
-	
   <script src="js/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
   <script src="js/jquery.stellar.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
   <script src="js/aos.js"></script>
   <script src="js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="js/booking.js"></script>
-
-  <!--new offer js-->
-  <script src="js/room/jquery.min.js"></script>
-  <script src="js/room/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/room/jquery.stellar.min.js"></script>
-  <script src="js/room/owl.carousel.min.js"></script>
-  <script src="js/room/aos.js"></script>
-  <script src="js/room/scrollax.min.js"></script>
-  <script src="js/room/main.js"></script>
-
+  <script src="js/reservation.js"></script>
+  <script src="js/footer-loader.js"></script>
 </body>
 
 </html>
