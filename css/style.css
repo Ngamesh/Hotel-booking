@@ -1780,17 +1780,46 @@ div {
   padding-top: 10px;
 }
 
+.block-21 .blog-img {
+  display: block;
+  flex: 0 0 80px;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.block-21 .text {
+  width: calc(100% - 100px);
+}
+
+.block-21 .text .heading {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.block-21 .heading a,
 .recent-blog-section .block-21 .heading a {
   color: #000;
   text-decoration: none;
 }
 
+.block-21 .heading a:hover,
+.block-21 .heading a:focus,
 .recent-blog-section .block-21 .heading a:hover,
 .recent-blog-section .block-21 .heading a:focus {
   color: #fc3c3c;
   text-decoration: none;
 }
 
+.block-21 .meta > div {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.block-21 .meta a,
 .recent-blog-section .block-21 .meta a {
   color: gray;
   text-decoration: none;
