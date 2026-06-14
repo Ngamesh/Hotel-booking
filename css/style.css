@@ -534,6 +534,40 @@ select {
   margin-bottom: 2px;
 }
 
+#reservation-form .custom-control {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  padding-left: 22px;
+  cursor: pointer;
+}
+
+#reservation-form .custom-control-input {
+  left: 0;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  transform: translateY(-50%);
+  z-index: 1;
+  cursor: pointer;
+}
+
+#reservation-form .custom-control-label {
+  display: inline-flex;
+  align-items: center;
+  min-height: 20px;
+  margin-bottom: 0;
+  padding-top: 0;
+  line-height: 1.25;
+  cursor: pointer;
+}
+
+#reservation-form .custom-control-label::before,
+#reservation-form .custom-control-label::after {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 #reservation-form .form-group:has(#adult),
 #reservation-form .form-group:has(#childern) {
   display: flex;
@@ -733,9 +767,21 @@ body.reservation-scroll-locked {
     margin-bottom: 4px;
   }
 
+  #reservation-form .custom-control {
+    min-height: 18px;
+    padding-left: 20px;
+    margin-bottom: 4px;
+  }
+
+  #reservation-form .custom-control-input {
+    width: 15px;
+    height: 15px;
+  }
+
   #reservation-form .custom-control-label {
     font-size: 12px;
-    line-height: 1.35;
+    min-height: 18px;
+    line-height: 1.25;
   }
 
   #reservation-form .row {
@@ -747,12 +793,30 @@ body.reservation-scroll-locked {
     margin-bottom: 8px !important;
   }
 
+  #reservation-form .time-chips-hour {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 3px !important;
+    width: 100%;
+  }
+
   #reservation-form .tc-btn {
-    min-width: 30px;
-    min-height: 28px;
-    padding: 3px 8px;
+    min-width: 0;
+    min-height: 26px;
+    padding: 3px 0;
     font-size: 12px;
-    line-height: 20px;
+    line-height: 18px;
+  }
+
+  #reservation-form .hour-chip {
+    flex: 1 1 0;
+    text-align: center;
+  }
+
+  #reservation-form .period-chip {
+    min-width: 44px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 
