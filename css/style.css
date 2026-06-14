@@ -652,32 +652,34 @@ select {
   }
 
   #reservationModal .modal-dialog {
-    margin: 8px auto;
-    max-width: calc(100% - 16px);
+    width: calc(100% - 12px);
+    max-width: 520px;
+    margin: 6px auto;
     max-height: calc(100vh - 16px);
     max-height: calc(100dvh - 16px);
   }
 
   #reservationModal .modal-body {
-    padding: 6px 12px;
+    padding: 6px 10px;
     overflow-y: auto;
   }
 
   #reservationModal .modal-header {
-    padding: 10px 12px 4px;
+    padding: 8px 10px 4px;
   }
 
   #reservationModal .modal-title {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.2;
   }
 
   #reservationModal .modal-footer {
-    padding: 8px 12px 10px;
+    padding: 7px 10px 9px;
   }
 
   #reservationModal .modal-footer .btn {
-    padding: 8px 18px;
+    padding: 7px 16px;
+    font-size: 13px;
   }
 
   #reservationModal .modal-body .container {
@@ -688,45 +690,61 @@ select {
   }
 
   #reservation-form .form-group {
-    margin-bottom: 10px !important;
+    margin-bottom: 8px !important;
   }
 
   #reservation-form .form-control {
-    height: 38px;
-    min-height: 38px;
-    font-size: 13px;
+    height: 34px;
+    min-height: 34px;
+    padding: 5px 8px;
+    font-size: 12px;
   }
 
   #reservation-form label {
-    margin-bottom: 3px;
-    font-size: 13px;
+    margin-bottom: 2px;
+    font-size: 12px;
   }
 
   #reservation-form .row>[class*="col-md-6"] {
-    flex: 0 0 100%;
-    max-width: 100%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 
   #reservation-form .row>[class*="col-md-12"] {
     flex: 0 0 100%;
     max-width: 100%;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 
   #reservation-form .custom-control-inline {
-    display: block;
-    margin-right: 0;
-    margin-bottom: 6px;
+    display: inline-flex;
+    margin-right: 10px;
+    margin-bottom: 4px;
+  }
+
+  #reservation-form .custom-control-label {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  #reservation-form .row {
+    margin-left: -6px;
+    margin-right: -6px;
   }
 
   #reservation-form .time-chips-group {
-    margin-bottom: 10px !important;
+    margin-bottom: 8px !important;
   }
 
   #reservation-form .tc-btn {
-    min-width: 34px;
-    min-height: 32px;
-    padding: 4px 10px;
-    line-height: 22px;
+    min-width: 30px;
+    min-height: 28px;
+    padding: 3px 8px;
+    font-size: 12px;
+    line-height: 20px;
   }
 }
 
