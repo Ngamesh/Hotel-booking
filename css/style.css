@@ -573,17 +573,28 @@ select {
 }
 
 #reservationModal {
-  overflow-y: hidden;
+  overflow-y: auto;
+  padding-left: 0 !important;
 }
 
 #reservationModal .modal-dialog {
   margin-top: 8px;
+  max-height: calc(100vh - 16px);
+  max-height: calc(100dvh - 16px);
+}
+
+#reservationModal .modal-content {
+  max-height: calc(100vh - 16px);
+  max-height: calc(100dvh - 16px);
+  display: flex;
+  flex-direction: column;
 }
 
 #reservationModal .modal-header {
   align-items: center;
   justify-content: space-between;
   padding-bottom: 4px;
+  flex: 0 0 auto;
 }
 
 #reservationModal .reservation-modal-header-spacer,
@@ -616,7 +627,10 @@ select {
 #reservationModal .modal-body {
   padding-top: 4px;
   padding-bottom: 4px;
-  overflow-y: visible;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  flex: 1 1 auto;
+  min-height: 0;
 }
 
 #reservation-form>.row:first-child .form-group {
@@ -629,30 +643,90 @@ select {
 
 #reservationModal .modal-footer {
   padding-top: 4px;
+  flex: 0 0 auto;
 }
 
 @media (max-width: 767.98px) {
   #reservationModal {
-    overflow-y: hidden;
+    overflow-y: auto !important;
   }
 
   #reservationModal .modal-dialog {
     margin: 8px auto;
     max-width: calc(100% - 16px);
+    max-height: calc(100vh - 16px);
+    max-height: calc(100dvh - 16px);
   }
 
   #reservationModal .modal-body {
-    overflow-y: visible;
+    padding: 6px 12px;
+    overflow-y: auto;
+  }
+
+  #reservationModal .modal-header {
+    padding: 10px 12px 4px;
+  }
+
+  #reservationModal .modal-title {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  #reservationModal .modal-footer {
+    padding: 8px 12px 10px;
+  }
+
+  #reservationModal .modal-footer .btn {
+    padding: 8px 18px;
+  }
+
+  #reservationModal .modal-body .container {
+    width: 100%;
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #reservation-form .form-group {
+    margin-bottom: 10px !important;
+  }
+
+  #reservation-form .form-control {
+    height: 38px;
+    min-height: 38px;
+    font-size: 13px;
+  }
+
+  #reservation-form label {
+    margin-bottom: 3px;
+    font-size: 13px;
   }
 
   #reservation-form .row>[class*="col-md-6"] {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   #reservation-form .row>[class*="col-md-12"] {
     flex: 0 0 100%;
     max-width: 100%;
+  }
+
+  #reservation-form .custom-control-inline {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 6px;
+  }
+
+  #reservation-form .time-chips-group {
+    margin-bottom: 10px !important;
+  }
+
+  #reservation-form .tc-btn {
+    min-width: 34px;
+    min-height: 32px;
+    padding: 4px 10px;
+    line-height: 22px;
   }
 }
 
