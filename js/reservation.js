@@ -6,6 +6,19 @@ document.addEventListener('DOMContentLoaded', function () {
     const stayOptions = document.getElementById('stay_options');
     const tourOptions = document.getElementById('tour_options');
     const eventsOptions = document.getElementById('events_options');
+    let reservationScrollPosition = 0;
+
+    function lockPageScroll() {
+        reservationScrollPosition = window.pageYOffset || document.documentElement.scrollTop || 0;
+        document.body.classList.add('reservation-scroll-locked');
+        document.body.style.top = `-${reservationScrollPosition}px`;
+    }
+
+    function unlockPageScroll() {
+        document.body.classList.remove('reservation-scroll-locked');
+        document.body.style.top = '';
+        window.scrollTo(0, reservationScrollPosition);
+    }
 
     function updateFormFields() {
         if (stayOptions) stayOptions.style.display = 'none';
@@ -32,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Modal pre-selection logic
     $('#reservationModal').on('show.bs.modal', function (event) {
+        lockPageScroll();
+
         var button = $(event.relatedTarget); // Button that triggered the modal
         var bookingType = button.data('booking-type'); // Extract info from data-* attributes
         var eventSpace = button.data('event-space');
@@ -52,4 +67,6 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }
     });
+
+    $('#reservationModal').on('hidden.bs.modal', unlockPageScroll);
 });

@@ -575,6 +575,13 @@ select {
 #reservationModal {
   overflow-y: auto;
   padding-left: 0 !important;
+  overscroll-behavior: contain;
+}
+
+body.reservation-scroll-locked {
+  position: fixed;
+  width: 100%;
+  overflow: hidden;
 }
 
 #reservationModal .modal-dialog {
@@ -629,6 +636,7 @@ select {
   padding-bottom: 4px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
   flex: 1 1 auto;
   min-height: 0;
 }
