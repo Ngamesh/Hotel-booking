@@ -25,8 +25,8 @@
         }
         : {
             services: 'services.html',
-            rooms: 'Room.html',
-            restaurant: 'Restaurant.html',
+            rooms: 'room.html',
+            restaurant: 'restaurant.html',
             blog: 'blog.html',
             contact: 'contact.html'
         };
@@ -60,8 +60,8 @@
         '    <div class="collapse navbar-collapse flex-grow-0" id="navbarResponsive">',
         '      <ul class="navbar-nav text-left">',
         '        <li class="nav-item' + getActiveClass('services.html') + '"><a class="nav-link js-scroll-trigger" href="' + links.services + '">Services</a></li>',
-        '        <li class="nav-item' + getActiveClass('Room.html') + '"><a class="nav-link js-scroll-trigger" href="' + links.rooms + '">Rooms</a></li>',
-        '        <li class="nav-item' + getActiveClass('Restaurant.html') + '"><a class="nav-link js-scroll-trigger" href="' + links.restaurant + '">Restaurant</a></li>',
+        '        <li class="nav-item' + getActiveClass('room.html') + '"><a class="nav-link js-scroll-trigger" href="' + links.rooms + '">Rooms</a></li>',
+        '        <li class="nav-item' + getActiveClass('restaurant.html') + '"><a class="nav-link js-scroll-trigger" href="' + links.restaurant + '">Restaurant</a></li>',
         '        <li class="nav-item' + getActiveClass('blog.html', 'blog-single.html') + '"><a class="nav-link js-scroll-trigger" href="' + links.blog + '">Blog</a></li>',
         '        <li class="nav-item' + getActiveClass('contact.html') + '"><a class="nav-link js-scroll-trigger" href="' + links.contact + '">Contact</a></li>',
         '        <li class="nav-item' + getActiveClass('about.html') + '"><a class="nav-link js-scroll-trigger" href="about.html">About</a></li>',
