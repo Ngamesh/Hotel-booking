@@ -22,7 +22,11 @@
     border: 1px solid #e4e4e4;
     border-radius: 4px;
     margin: 10px 15px;
-    display: inline-block;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px;
 }
 
 .filter-button-group button {
@@ -36,13 +40,23 @@
     padding: 12px 40px;
     border: 1px solid #fc3c3c;
     border-radius: 5px;
+    outline: none;
+    transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
+.filter-button-group button:hover,
+.filter-button-group button:focus,
+.filter-button-group button:active,
 .filter-button-group button.active {
-    background: #fff;
-    color: #fc3c3c;
-    box-shadow: 2px 20px 45px 5px rgba(0, 0, 0, .2);
+    background: #fc3c3c;
+    color: #fff;
+    box-shadow: 0 10px 25px rgba(252, 60, 60, .18);
     border: 1px solid #fc3c3c;
+    outline: none;
+}
+
+.filter-button-group button:focus-visible {
+    box-shadow: 0 0 0 3px rgba(252, 60, 60, .25);
 }
 
 .gallery-single {
@@ -94,6 +108,66 @@
 
 .gallery-single:hover .why-text {
     bottom: 0px;
+}
+
+@media (max-width: 767px) {
+    .menu-box {
+        padding: 45px 0px;
+    }
+
+    .heading-title {
+        margin-bottom: 30px;
+    }
+
+    .heading-title h2 {
+        font-size: 24px;
+    }
+
+    .heading-title p {
+        font-size: 15px;
+        line-height: 1.55;
+        padding: 0 6px;
+    }
+
+    .filter-button-group {
+        width: 100%;
+        margin: 8px 0 18px;
+        border: 0;
+        gap: 8px;
+        padding: 0;
+    }
+
+    .filter-button-group button {
+        flex: 1 1 calc(50% - 8px);
+        min-width: 130px;
+        padding: 10px 12px;
+        font-size: 12px;
+        letter-spacing: .5px;
+    }
+
+    .gallery-single {
+        margin: 18px 0px;
+    }
+
+    .why-text h4 {
+        font-size: 20px;
+    }
+
+    .why-text p {
+        font-size: 15px;
+        line-height: 1.45;
+    }
+
+    .why-text h5 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    .filter-button-group button {
+        min-width: 0;
+        flex-basis: 100%;
+    }
 }
 
 /*-------------------------Gallery---------------------------------*/
